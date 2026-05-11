@@ -70,8 +70,7 @@ function Register() {
         <h2 className={formTitle}>Create an Account</h2>
 
         {/* API Error */}
-        {apiError && <p className="text-red-500">{errorClass} </p>}
-        {/* {apiError && <p className={errorClass}>{apiError}</p>} */}
+        {apiError && <p className={errorClass}>{apiError}</p>}
 
         <form onSubmit={handleSubmit(onUserRegister)}>
           {/* ROLE */}
